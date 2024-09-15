@@ -1,5 +1,6 @@
 import app from "@server/server";
 import dotenv from "dotenv";
+import "@config/mongodb";
 
 dotenv.config();
 
