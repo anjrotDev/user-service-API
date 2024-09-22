@@ -1,4 +1,5 @@
 import { UserModel } from "@models/Users";
+import { Query } from "types/RepositoryTypes";
 import { IUserRepository, User } from "types/UsersTypes";
 
 export class UserRepository implements IUserRepository {
@@ -9,6 +10,10 @@ export class UserRepository implements IUserRepository {
 
   async find(): Promise<User[]> {
     return await UserModel.find().exec();
+  }
+
+  async findOne(query: Query): Promise<User | null> {
+    return await UserModel.findOne(query);
   }
 
   async findById(id: string): Promise<User | null> {
