@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { createRoles, deleteRoles, findRoles, findRolesById, updateRoles } from "@controllers/rolesControllers";
 import { createUser, deleteUser, findUsers, findUsersById, updateUser } from "@controllers/usersControllers";
+import { loginUser, registerUser } from "@controllers/auth/authControllers";
 
 const router = Router();
 
@@ -8,6 +9,10 @@ export default () => {
   router.get("/health", (req, res) => {
     res.send("Api is Healthy!!!");
   });
+
+  // Auth Routes
+  router.post("/auth/register", registerUser);
+  router.post("/auth/login", loginUser);
 
   // Users Routes
   router.get("/users", findUsers);
