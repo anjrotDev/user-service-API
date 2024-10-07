@@ -1,12 +1,17 @@
 POST http://localhost:4000/api/v1/posts HTTP/1.1
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDA5YTcyZDRkMmRiMTU1NDcxNDBhMSIsImVtYWlsIjoiZ3Vlc3RAdGVzdC5jb20iLCJ1c2VybmFtZSI6Imd1ZXN0IiwiaWF0IjoxNzI4MDk4OTU1LCJleHAiOjE3MjgxMDI1NTV9.V0HrZEEJrOvLof2HNg3UIHluFtEyRUaBVaKuSX8LWNw
 
 {
   "title": "Post Prueba 2"
 }
 
+
+#Manager eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDA5YWE4ZDRkMmRiMTU1NDcxNDBhNSIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTcyODA5NjQ4MSwiZXhwIjoxNzI4MTAwMDgxfQ.U9Y4B3pP9nDpZDkk8rAWP7_e7Ow99i2B3rPw56Avn8U
 ###
 GET http://localhost:4000/api/v1/posts HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDA5YTcyZDRkMmRiMTU1NDcxNDBhMSIsImVtYWlsIjoiZ3Vlc3RAdGVzdC5jb20iLCJ1c2VybmFtZSI6Imd1ZXN0IiwiaWF0IjoxNzI4MDk4OTU1LCJleHAiOjE3MjgxMDI1NTV9.V0HrZEEJrOvLof2HNg3UIHluFtEyRUaBVaKuSX8LWNw
 
 ###
 GET http://localhost:4000/api/v1/posts/66fafc55bd8ec4ae3e12b81b HTTP/1.1
@@ -14,6 +19,7 @@ GET http://localhost:4000/api/v1/posts/66fafc55bd8ec4ae3e12b81b HTTP/1.1
 ###
 PUT http://localhost:4000/api/v1/posts/66fafc55bd8ec4ae3e12b81b HTTP/1.1
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDA5YWE4ZDRkMmRiMTU1NDcxNDBhNSIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsInVzZXJuYW1lIjoidGVzdCIsImlhdCI6MTcyODA5NjQ4MSwiZXhwIjoxNzI4MTAwMDgxfQ.U9Y4B3pP9nDpZDkk8rAWP7_e7Ow99i2B3rPw56Avn8U
 
 {
   "title": "PruePrueba actualizado"

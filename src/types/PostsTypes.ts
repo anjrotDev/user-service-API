@@ -1,4 +1,4 @@
-import { Repository } from "./RepositoryTypes";
+import { Query, Repository } from "./RepositoryTypes";
 
 export interface Posts extends Document {
   title: string;
@@ -12,7 +12,7 @@ export interface IPostsRepository extends Repository<Posts> {}
 
 export interface IPostsService {
   createPosts(Posts: Posts): Promise<Posts>;
-  findPosts(): Promise<Posts[]>;
+  findPosts(query?: Query): Promise<Posts[]>;
   findPostsById(id: string): Promise<Posts | null>;
   updatePosts(id: string, Posts: Partial<Posts>): Promise<Posts | null>;
   deletePosts(id: string): Promise<boolean>;

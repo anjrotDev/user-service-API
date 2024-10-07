@@ -1,24 +1,28 @@
 POST http://localhost:4000/api/v1/users HTTP/1.1
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjAzOTA3MTlmZmI2NDhjYmE1N2JiMyIsImVtYWlsIjoiZXhhbXBsZTNAdGVzdC5jb20iLCJ1c2VybmFtZSI6IkFuanJvdERldjAwMCIsImlhdCI6MTcyODA3ODM1NywiZXhwIjoxNzI4MDgxOTU3fQ.r6OeTCgf__pNbAh6glLp3FFOoWJ2XH96i0LVkdGC5gI
 
 {
-  "name": "Anjrot",
-  "username": "AnjrotDev01",
-  "email": "example2@test.com"
+  "name": "user2",
+  "username": "user2",
+  "email": "user2@test.com",
+  "password": "123456"
 }
 
 ###
 GET http://localhost:4000/api/v1/users HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDA5YTVhZDRkMmRiMTU1NDcxNDA5OSIsImVtYWlsIjoiYWRtaW5AdGVzdC5jb20iLCJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI4MjQyMTI1LCJleHAiOjE3MjgyNDU3MjV9.BFack_sDEjhofwfg0dmbnvMcMzZXOQsz9kwyiUbN4dw
 
 ###
 GET http://localhost:4000/api/v1/users/66ee27416e05b3007e97829b HTTP/1.1
 
 ###
-PUT http://localhost:4000/api/v1/users/66ee27416e05b3007e97829b HTTP/1.1
+PUT http://localhost:4000/api/v1/users/67009a72d4d2db15547140a1 HTTP/1.1
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDA5YTVhZDRkMmRiMTU1NDcxNDA5OSIsImVtYWlsIjoiYWRtaW5AdGVzdC5jb20iLCJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI4MDk5NzY5LCJleHAiOjE3MjgxMDMzNjl9.reKeBCmX--AwQ3y0Yl90nK5jMrJypWX0k67PlrnrX4U
 
 {
-  "name": "Antonio"
+  "permissions": ["posts_read", "posts_write"]
 }
 
 ###

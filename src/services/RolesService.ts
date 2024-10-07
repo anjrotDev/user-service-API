@@ -1,3 +1,4 @@
+import { Query } from "types/RepositoryTypes";
 import { IRolesRepository, IRolesService, Roles } from "types/RolesTypes";
 
 export class RolesService implements IRolesService {
@@ -11,8 +12,8 @@ export class RolesService implements IRolesService {
     return this.rolesRepository.create(Roles);
   }
 
-  async findRoles(): Promise<Roles[]> {
-    return this.rolesRepository.find();
+  async findRoles(query?: Query): Promise<Roles[]> {
+    return this.rolesRepository.find(query);
   }
 
   async findRolesById(id: string): Promise<Roles | null> {

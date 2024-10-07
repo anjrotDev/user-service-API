@@ -7,6 +7,7 @@ const postsRepository: IPostsRepository = new PostsRepository();
 const postsService: IPostsService = new PostsService(postsRepository);
 
 export const findPosts = async (req: Request, res: Response) => {
+  console.log("req findPosts:>> ", req.currentUser);
   try {
     const Posts = await postsService.findPosts();
     if (Posts.length === 0) return res.status(404).json({ message: "no Posts Found." });

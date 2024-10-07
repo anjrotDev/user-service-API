@@ -15,7 +15,8 @@
       "@routes/*": ["routes/*"],
       "@server/*": ["server/*"],
       "@config/*": ["config/*"]
-    }
+    },
+    "typeRoots": ["@types", "./node_modules/@types"]
   },
   "include": ["src"],
   "exclude": ["node_modules"],

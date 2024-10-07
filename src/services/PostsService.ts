@@ -1,4 +1,5 @@
 import { IPostsRepository, IPostsService, Posts } from "types/PostsTypes";
+import { Query } from "types/RepositoryTypes";
 
 export class PostsService implements IPostsService {
   private PostsRepository: IPostsRepository;
@@ -11,8 +12,8 @@ export class PostsService implements IPostsService {
     return this.PostsRepository.create(posts);
   }
 
-  async findPosts(): Promise<Posts[]> {
-    return this.PostsRepository.find();
+  async findPosts(query?: Query): Promise<Posts[]> {
+    return this.PostsRepository.find(query);
   }
 
   async findPostsById(id: string): Promise<Posts | null> {

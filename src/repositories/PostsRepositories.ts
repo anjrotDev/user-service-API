@@ -1,5 +1,6 @@
 import { PostsModel } from "@models/Posts";
 import { IPostsRepository, Posts } from "types/PostsTypes";
+import { Query } from "types/RepositoryTypes";
 
 export class PostsRepository implements IPostsRepository {
   async create(data: Posts): Promise<Posts> {
@@ -7,8 +8,8 @@ export class PostsRepository implements IPostsRepository {
     return await newPosts.save();
   }
 
-  async find(): Promise<Posts[]> {
-    return await PostsModel.find().exec();
+  async find(query?: Query): Promise<Posts[]> {
+    return await PostsModel.find(query || {}).exec();
   }
 
   async findById(id: string): Promise<Posts | null> {
