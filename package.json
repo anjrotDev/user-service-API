@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/app.ts",
     "build": "tsc",
-    "start": "node ./dist/app.js"
+    "start": "node ./dist/app.js",
+    "build:digitalocean": "npm install --production=false && npm run build && npm prune --production"
   },
   "keywords": [],
   "author": "",
