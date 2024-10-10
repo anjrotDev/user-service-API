@@ -3,8 +3,8 @@ import { createRoles, deleteRoles, findRoles, findRolesById, updateRoles } from 
 import { createUser, deleteUser, findUsers, findUsersById, updateUser } from "@controllers/usersControllers";
 import { loginUser, registerUser } from "@controllers/auth/authControllers";
 import { createPosts, deletePosts, findPosts, findPostsById, updatePosts } from "@controllers/postsControllers";
-import { getPermissons, verifyToken } from "middlewares/auth";
-import { checkRoles } from "middlewares/roles";
+import { getPermissons, verifyToken } from "@middlewares/auth";
+import { checkRoles } from "@middlewares/roles";
 
 const router = Router();
 

@@ -1,10 +1,12 @@
 {
   "name": "api-users",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/app.ts"
+    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/app.ts",
+    "build": "tsc",
+    "start": "node ./dist/app.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,7 @@
     "dotenv": "^16.4.5",
     "express": "^4.20.0",
     "jsonwebtoken": "^9.0.2",
+    "module-alias": "^2.2.3",
     "mongoose": "^8.6.2",
     "morgan": "^1.10.0"
   },
@@ -26,5 +29,15 @@
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.6.2"
+  },
+  "_moduleAliases": {
+    "@server": "dist/server",
+    "@config": "dist/config",
+    "@controllers": "dist/controllers",
+    "@services": "dist/services",
+    "@repositories": "dist/repositories",
+    "@models": "dist/models",
+    "@routes": "dist/routes",
+    "@middlewares": "dist/middlewares"
   }
 }
