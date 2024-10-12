@@ -8,7 +8,7 @@ This project was created as part of a YouTube tutorial. To get a detailed walkth
 
 [Watch the Tutorial on YouTube](https://www.youtube.com/playlist?list=PLoOnCUvhzJYPbtVpYCqP98DoN0pKKImQo)
 
-[![Crea una API Rest Con Node JS, Typescript y Express](https://img.youtube.com/vi/jMNzE_QCrd8/maxresdefault.jpg)](https://youtu.be/PLoOnCUvhzJYPbtVpYCqP98DoN0pKKImQo "Typescript Generics | Aprende a como usar los Tipos Genéricos en Typescript")
+[![Crea una API Rest Con Node JS, Typescript y Express](https://img.youtube.com/vi/jMNzE_QCrd8/maxresdefault.jpg)](https://youtube.com/playlist?list=PLoOnCUvhzJYPbtVpYCqP98DoN0pKKImQo&si=wprpLVhejPrMa6YU "REST API Node Js")
 
 Don't forget to like, subscribe, and leave a comment if you find the tutorial helpful!
 
